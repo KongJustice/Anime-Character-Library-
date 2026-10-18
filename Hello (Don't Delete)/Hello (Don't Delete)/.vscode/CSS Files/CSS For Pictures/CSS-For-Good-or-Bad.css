@@ -1,0 +1,197 @@
+/* RESET / BASE */
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+
+body {
+  overflow-x: hidden;
+  font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+  color: #ffffff;
+  backdrop-filter: brightness(0.3);
+}
+
+
+/* OPENING TEXT */
+
+.opening-text {
+  display: block;
+  width: 100%;
+  max-width: max-content;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: auto ;
+  padding: 1rem;
+  padding-left: 9.8%;
+  padding-right:9.8%;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #ffffff;
+  background: #5e5d5d96;
+  border-width: 6px;
+  border-image: linear-gradient(to right , White , Black , Black) 1;
+  border-radius: 12px;
+  text-shadow: 3px 3px 3px #000000 , -3px -3px 3px #000000;
+  position:sticky;
+  top: 3.5rem ;
+}
+
+.opening-text:hover {
+    border-image: linear-gradient(to left , White , Black , Black) 1;
+    box-shadow: 1px 1px 4px 5px rgba(0, 0, 0, 0.65);
+    color: Black;
+    text-shadow: 2px 1px 3px #ffffff , 0 1px #ffffff;
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: 0.2s , ease-in-out 0.3s;
+    font-family: cursive;
+    font-size: 1.5rem;
+}
+
+/* Go Back To Home-Page */
+
+#arrow {
+    border-radius: 50px;
+    width: 50px;
+    background: #0000;
+    position: sticky;
+    top: 67px;
+    margin-left: 12px ;
+    margin-top: 19px;
+    border: transparent;
+    box-shadow: 2px 2px 7px 6px #ffffff;
+    color: #ffffff;
+    font-weight: bolder;
+    padding: auto;
+    cursor: Pointer;
+}
+
+#arrow:hover {
+  background-color: #fcfcfc;
+  color: #000000;
+  width: 10%;
+  max-width: 60px;
+  transform: scale(1.1);
+  transition: 0.2s , ease-in-out 0.2s;
+  margin-left: 1.5rem;
+}
+
+#arrow:active {
+  width:70px;
+  background-color: #ff8c00;
+  border-color: #ff8c00 ;
+  border-radius: 70px;
+  box-shadow: 0 0 5px 7px #ffffff;
+  font-weight: 1000;
+  color: aqua;
+}
+
+/* Good-or-Bad Image */
+
+.Good-or-Bad {
+    display: block;
+    width: 100%;
+    max-width: max-content;
+    margin: 1.5rem auto;
+    border-radius: 12px;
+    margin-top: 2.8rem;
+    cursor: pointer;
+    border: 7px solid #ff8c00;
+    box-shadow: 4px 4px 5px 9px Black , -4px -4px 5px 14px White;
+    border-image: linear-gradient(to right , White , White , Black , Black) 1;
+    transform: scale(0.9);
+  }
+
+
+.Good-or-Bad:hover {
+  transform: scale(1);
+  transition: 0.2s , ease-in-out 0.2s;
+  box-shadow: 8px  5px 9px white , -8px  5px 9px black ;
+  border-image: linear-gradient(to right ,  White , White , Black , Black ) 1;
+  margin-top: 3.5rem;
+}
+
+/* Good-or-Bad Caption */
+
+.Good-or-Bad-info-text {
+  display: block;
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto 1rem auto;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  color: #220f8d;
+  text-shadow: 4px 4px 6px #000000 , -4px -4px 6px #000000;
+  cursor: pointer;
+}
+
+
+.Good-or-Bad-info-text:hover {
+  text-shadow: 5px 4px 9px #5515ca , -5px -4px 9px #5515ca;
+  transition: 0.2s , ease-in-out 0.2s;
+  transform: scale(1.2);
+}
+
+
+
+/* Sasuke Info Block */
+
+.info {
+  display: block;
+  width: 100%;
+  max-width: 1000px;
+  margin: 1rem auto;
+  padding: 1rem;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #ffffff;
+  background: #000000a6;
+  border: transparent;
+  border-radius: 42px;
+  line-height: 1.6;
+  box-shadow: 4px 4px 5px 9px Black , -4px -4px 5px 14px White;
+  cursor: pointer;
+}
+
+
+.info1 {
+  width: 100%;
+  max-width: 1000px;
+  margin: 1rem auto;
+  padding: 1rem;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #ffffff;
+  background: #000000a6;
+  border: transparent;
+  border-radius: 42px;
+  line-height: 1.6;
+  box-shadow: 4px 4px 5px 9px Black , -4px -4px 5px 14px White;
+  cursor: pointer;
+}
+
+ /* For Feature Phone Screens */
+
+@media (max-width: 480px) {
+  .opening-text,
+  .info {
+    font-size: 0.9rem;
+    padding: 0.75rem;
+    border-width: 2px;
+  }
+
+  .Sasuke-info-text {
+    font-size: 1.4rem;
+  }
+
+  .info {
+    border-width: 2px;
+  }
+}

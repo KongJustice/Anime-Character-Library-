@@ -1,0 +1,144 @@
+*{box-sizing: border-box;
+
+}
+
+html , body {
+  overflow-x: hidden;
+  backdrop-filter: brightness(0.5);
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}*
+
+/* Opening Text */
+
+.Kakashi-Button {
+  display: block;
+  width: 100%;
+  max-width: 1000px;
+  margin: auto;
+  padding: 1rem;
+  position: sticky;
+  top: 1.5rem ;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #ffffff;
+  background: #000000a6;
+  border: 3px solid #91a810;
+  border-radius: 42px;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.9);
+  box-shadow: 0 2px 17px 5px #91a810;
+}
+
+.Kakashi-Button:hover {
+  color: #ffffff;
+  box-shadow: 4px 4px 12px 5px #91a810;
+  transform: scale(1.2);
+  transition: 0.67s , ease-in-out 0.4s;
+}
+
+/* Go Back To HomePage */
+
+#arrow {
+    border-radius: 50px;
+    width: 50px;
+    background: #91a810;
+    position: sticky;
+    top: 67px;
+    margin-left: 12px ;
+    margin-top: 19px;
+    border-width: 3px;
+    box-shadow: 2px 2px 7px 6px #fffffe;
+    color: #fffcf8;
+    font-weight: bolder;
+    padding: auto;
+}
+
+#arrow:hover {
+  border-color: #aaa2a2;
+  width: 55px;
+  background: linear-gradient(to bottom, lightblue , green);
+}
+
+#arrow:active {
+  width:70px;
+  background: linear-gradient( to left,aqua , #fdfdfc , aqua );
+  border-color: #ff8c00 ;
+  border-radius: 70px;
+  box-shadow: 0 0 5px 7px #ffffff;
+  font-weight: 1000;
+  color: aqua;
+}
+
+/* Hatake Kakashi-Picture */
+
+.Kakashi-Picture {
+  display: block;
+  width: 100%;
+  max-width: 1000px ;
+  margin: 1.5rem auto;
+  border-radius: 12px;
+  border: 3px solid #91a810;
+  box-shadow: 3px 3px 4px 5px #91a810 , -3px -3px 4px 5px #91a810;
+}
+
+
+/* Hatake Kakashi Caption*/
+
+.Kakashi-info-text {
+  display: block;
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto 1rem auto;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  color: #91a810;
+  text-shadow: 0 2px 99px  #91a810;
+}
+
+.Kakashi-info-text:hover {
+  display:inline;
+  text-shadow: 3px 3px 79px #4510a8;
+  border-color: #4510a8;
+}
+
+/* Info */
+
+.info {
+  display: block;
+  width: 100%;
+  max-width: 1000px;
+  margin: 1rem auto;
+  padding: 1rem;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #ffffff;
+  background: #000000a6;
+  border: 3px solid #9fb812;
+  border-radius: 42px;
+  box-shadow: 0 4px 12px #00000066;
+  text-shadow: 0 1px 3px #000000e6;
+  line-height: 1.6;
+  box-shadow: 0 4px 42px #91a810;
+}
+
+
+  /* For Feature Phone Screens */
+
+@media (max-width: 480px) {
+  .opening-text,
+  .info {
+    font-size: 0.9rem;
+    padding: 0.75rem;
+    border-width: 2px;
+  }
+
+  .butterfly-girl-info-text-color {
+    font-size: 1.4rem;
+  }
+
+  .butterfly-girl-info {
+    border-width: 2px;
+  }
+}

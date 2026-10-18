@@ -1,0 +1,175 @@
+/* RESET / BASE */
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+
+body {
+  overflow-x: hidden;
+  font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+  color: #ffffff;
+  position: relative;
+}
+
+
+/* OPENING TEXT */
+
+.opening-text {
+  display: flexbox;
+  width: 100%;
+  max-width: max-content;
+  margin-top: 1.5%;
+  margin-bottom: 0%;
+  margin-left: auto ;
+  margin-right: auto ;
+  font-size: 2.7rem;
+  font-weight: bold;
+  color: #370b70;
+  background: None;
+  border-radius: 12px;
+  position:sticky;
+  top: 0px;
+  text-align: center ;
+  text-shadow: 4px 4px 8px #ffffff , -4px -4px 8px  #ffffff;
+}
+
+.opening-text:hover {
+  background: linear-gradient(to left , #370b70 , white , #370b70);
+  transition:  0.3s ;
+  transform: scale(1.1);
+  margin-top: 1.5%;
+  margin-bottom: 0.5%;
+  margin-left: auto ;
+  margin-right: auto ;
+}
+
+
+.bg-video {
+  position: fixed;
+  top:0;
+  left: 0;
+  z-index: -1;
+  height:100%;
+  width: 100%;
+  object-fit: cover;
+  pointer-events: none;
+  filter: brightness(0.6);
+}
+
+
+#arrow {
+    border-radius: 50px;
+    width: 100%;
+    max-width: max-content;
+    background: #370b70;
+    position: sticky;
+    top: 67px;
+    margin-left: 12px ;
+    margin-top: 19px;
+    border-width: 3px;
+    box-shadow: 2px 2px 7px 6px #fffffe;
+    color: #fffcf8;
+    font-weight: bolder;
+    padding: auto;
+    z-index: 100;
+}
+
+#arrow:hover {
+  border-color: #aaa2a2;
+  width: 100%;
+  max-width: max-content;
+  background: linear-gradient(to top, #0b21a0 , #6878d4);
+  transform: scale(1.2);
+}
+
+#arrow:active {
+  width:70px;
+  background: linear-gradient( to left,aqua , #fdfdfc , aqua );
+  border-color: #ff8c00 ;
+  border-radius: 70px;
+  box-shadow: 0 0 5px 7px #ffffff;
+  font-weight: 1000;
+  color: aqua;
+}
+
+
+/* Itadori-Yuji Video */
+
+.Itadori-Yuji {
+  display: block;
+  Width: 100%;
+  max-width: 600px;
+  aspect-ratio: 7/9;
+  object-fit: cover;
+  margin: 1.5rem auto;
+  border-radius: 70px;
+  border: 3px solid #370b70;
+  box-shadow: 4px 4px 8px #370b70 , -4px -4px 8px 3px #370b70 ;
+}
+
+
+/* Itadori-Yuji Caption */
+
+.Itadori-Yuji-Edit-info-text {
+  display: block;
+  width: 100% ;
+  max-width: fit-content;
+  margin: 0 auto 1rem auto;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  color: #370b70;
+  text-shadow: 4px 4px 8px #ffffff , -4px -4px 8px  #ffffff;
+  border-radius: 1%;
+}
+
+.Itadori-Yuji-Edit-info-text:hover {
+  background: linear-gradient(to left , #370b70 , white , #370b70);
+  transition:  0.3s ;
+  transform: scale(1.1);
+}
+
+/* Itadori-Yuji Info Block */
+
+.info {
+  display: block;
+  width: 100%;
+  max-width: 1000px;
+  margin: 1rem auto;
+  padding: 1rem;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #ffffff;
+  background: #000000a6;
+  border: 3px solid #370b70;
+  border-radius: 42px;
+  box-shadow: 2px 2px 4px 3px #370b70 , -2px -2px 9px  #370b70;
+  text-shadow: 0 1px 3px #000000e6;
+  line-height: 1.6;
+}
+
+
+/* SMALL SCREENS */
+
+@media (max-width: 480px) {
+  .opening-text,
+  .info {
+    font-size: 0.9rem;
+    padding: 0.75rem;
+    border-width: 2px;
+  }
+
+  .Itadori-Yuji-Edit-text {
+    font-size: 1.4rem;
+  }
+
+  .info {
+    border-width: 2px;
+  }
+}

@@ -1,0 +1,206 @@
+/* RESET / BASE */
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+
+body {
+  overflow-x: hidden;
+  font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+  color: #ffffff;
+  backdrop-filter: brightness(0.4);
+}
+
+
+/* OPENING TEXT */
+
+.opening-text {
+  display: block;
+  width: 100%;
+  max-width: 1000px;
+  margin: auto;
+  padding: 1rem;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #000000;
+  background: #ffffff;
+  border: 3px solid #000000;
+  border-radius: 42px;
+  box-shadow: 2px 2px 9px 1px #000000;
+  position:sticky;
+  top: 1.5rem ;
+}
+
+.opening-text:hover {
+  background-color: #ffffff;
+  border-color: #000000;
+  box-shadow: 3px 3px 4px 5px #000000a6;
+  color: black;
+  cursor: pointer;
+  transform: scale(1.1);
+  transition: 0.57s , ease-in-out 0.37s;
+  text-shadow: none ;
+}
+
+
+#arrow {
+    border-radius: 50px;
+    width: 50px;
+    background: rgba(0, 0, 0, 0.9);
+    position: sticky;
+    top: 67px;
+    margin-left: 12px ;
+    margin-top: 19px;
+    border-width: 3px;
+    box-shadow: 2px 2px 7px 6px #fffffe;
+    color: #fffcf8;
+    font-weight: bolder;
+    padding: auto;
+    cursor: Pointer;
+}
+
+#arrow:hover {
+  background-color: #fcfcfc;
+  color: rgb(0, 0, 0);
+  border-color: #aaa2a2;
+  width: 55px;
+  max-width: 100px ;
+  transform: scale(1.1);
+  transition: 0.37s , ease-in-out 0.17s;
+}
+
+#arrow:active {
+  width:70px;
+  background-color: #ff8c00;
+  border-color: #ff8c00 ;
+  border-radius: 70px;
+  box-shadow: 0 0 5px 7px #ffffff;
+  font-weight: 1000;
+  color: aqua;
+}
+
+/* Hope? Image */
+
+.Hope-Picture {
+  display: block;
+  max-width: 100%;
+  margin: 1.5rem auto;
+  border-radius: 42px;
+  border: 3px solid #000000;
+  box-shadow: 2px 2px 9px 9px #000000;
+  cursor: pointer;
+  margin-bottom: 10%;
+}
+
+.Hope-Picture:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  transition: 0.57s , ease-in-out 0.37s;
+  margin-top: auto;
+}
+
+
+/* Hope? Caption */
+
+.Hope-info-text {
+  display: inline;
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto 1rem auto;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  color: #ffffff;
+  text-shadow: 5px 5px 3px  #000000 , -5px -5px 8px  #000000;
+  cursor: pointer;
+}
+
+
+.Hope-info-text:hover {
+  display: inline;
+  transition: 0.57s , ease-in-out 0.37s;
+  cursor: pointer;
+  color: #000000;
+  text-shadow: 5px 5px 3px  #ffffff , -5px -5px 8px  #ffffff;
+}
+
+.Hope-info-text:active {
+  display:inline;
+  transition: 120 s , ease-in-out 120 s;
+  cursor: pointer;
+  color: #74716e;
+}
+
+/* Hope? Info Block */
+
+.info {
+  display: block;
+  width: 100%;
+  max-width: 1000px;
+  margin: 1rem auto;
+  padding: 1rem;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #000000;
+  background-color: #ffffff;
+  border: 3px solid #000000;
+  border-radius: 42px;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.9);
+  line-height: 1.6;
+  box-shadow: 2px 2px 9px 9px #000000;
+  cursor: pointer;
+
+}
+
+
+.info1 {
+  display: block;
+  width: 94%;
+  max-width: 2500px;
+  margin: 1rem auto;
+  padding: 1rem;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #000000;
+  background-color: #ffffff;
+  border: 3px solid #ffffff;
+  border-radius: 42px;
+  text-shadow: 5px 5px 3px  #ffffff , -5px -5px 8px  #ffffff;
+  line-height: 1.6;
+  box-shadow: 5px 5px 19px 9px #eceaea;
+}
+
+:is(.info, .info1):hover {
+  display:block;
+  font-weight: bold;
+  transform: scale(1.1);
+  transition: 0.57s , ease-in-out 0.37s;
+  cursor: pointer;
+  color: #000000;
+  text-shadow: 5px 5px 3px  #ffffff , -5px -5px 8px  #ffffff;
+}
+
+ /* For Feature Phone Screens */
+
+@media (max-width: 480px) {
+  .opening-text,
+  .info {
+    font-size: 0.9rem;
+    padding: 0.75rem;
+    border-width: 2px;
+  }
+
+  .Dabi-info-text {
+    font-size: 1.4rem;
+  }
+
+  .info {
+    border-width: 2px;
+  }
+}

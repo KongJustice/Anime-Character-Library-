@@ -1,0 +1,182 @@
+/* RESET / BASE */
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+
+body {
+  overflow-x: hidden;
+  font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+  color: #ffffff;
+  position: relative;
+}
+
+
+/* OPENING TEXT */
+
+.opening-text {
+  display: block;
+  width: 100%;
+  max-width: max-content;
+  border-radius: 33px;
+  margin: 1.5rem auto;
+  font-size: 2em;
+  font-weight: bold;
+  color: #1874c0;
+  background: #b9b2b2a6;
+  box-shadow: 4px 4px 9px 2px #1874c0 , -4px -4px 9px 2px #1874c0;
+  position: sticky;
+  top: 14px;
+  border-color: #1874c0;
+  border: solid;
+  padding: 1%;
+  margin-bottom: 0%;
+}
+
+
+.opening-text:hover {
+  background-color: #1874c0 ;
+  transition: 0.2s , ease-in-out 0.3s ;
+  background: linear-gradient(to left , #1874c0 , white , purple);
+  transform: scale(1.2);
+  margin-bottom: 2%;
+  margin-top: 2%;
+}
+
+.bg-video {
+  position: fixed;
+  top:0;
+  left: 0;
+  z-index: -1;
+  height:100%;
+  width: 100%;
+  object-fit: cover;
+  pointer-events: none;
+  filter: brightness(0.6);
+}
+
+
+#arrow {
+    border-radius: 50px;
+    width: 50px;
+    background: #1874c0;
+    position: sticky;
+    top: 67px;
+    margin-left: 12px ;
+    margin-top: 19px;
+    border-width: 3px;
+    box-shadow: 2px 2px 7px 6px #fffffe;
+    color: #fffcf8;
+    font-weight: bolder;
+    padding: auto;
+}
+
+#arrow:hover {
+  border-color: #aaa2a2;
+  width: 55px;
+  background: linear-gradient(to bottom, blue , pink);
+}
+
+#arrow:active {
+  width:70px;
+  background: linear-gradient( to left,aqua , #fdfdfc , aqua );
+  border-color: #ff8c00 ;
+  border-radius: 70px;
+  box-shadow: 0 0 5px 7px #ffffff;
+  font-weight: 1000;
+  color: aqua;
+}
+
+
+
+/* Anime-Okay Video */
+
+.Anime-Okay-Edit {
+  display: block;
+  width: 100% ;
+  max-width: 900px;
+  height: auto;
+  margin: 0.9% auto;
+  border-radius: 42px;
+  border: 3px solid #1874c0;
+  box-shadow: 4px 4px 9px 9px #1874c0;
+  margin-bottom: 37px;
+
+}
+
+
+
+/* Anime-Okay-Edit Caption */
+
+.Anime-Okay-Edit-info-text {
+  display: block ;
+  width: 100% ;
+  max-width: max-content;
+  margin: 0 auto 1rem auto;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  color: #1874c0;
+  padding: none;
+  border-radius: 33px;
+  padding-left: 1%;
+  padding-right: 1%;
+  background-color: #b9b2b2a6;
+  box-shadow: 4px 4px 9px 2px #1874c0 , -4px -4px 9px 2px #1874c0;
+}
+
+
+.Anime-Okay-Edit-info-text:hover {
+  transition: 0.2s , ease-in-out 0.2s ;
+  background: linear-gradient(to left , #1874c0 , white , purple);
+  transform: scale(1.2);
+  margin: 6% auto;
+}
+
+
+
+/* Anime-Okay-Edit Info Block */
+
+.info {
+  display: block;
+  width: 100%;
+  max-width: 1000px;
+  margin: 1rem auto;
+  padding: 1rem;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #ffffff;
+  background: rgba(0, 0, 0, 0.65);
+  border: 3px solid #1874c0;
+  border-radius: 42px;
+  box-shadow: 4px 4px 9px 9px #1874c0;;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.9);
+  line-height: 1.6;
+  margin-top: 36px;
+}
+
+
+/* SMALL SCREENS */
+
+@media (max-width: 767px) {
+  .opening-text,
+  .info {
+    font-size: 0.9rem;
+    padding: 0.75rem;
+    border-width: 2px;
+  }
+
+  .Anime-Okay-Edit-info-text {
+    font-size: 1.4rem;
+  }
+
+  .info {
+    border-width: 2px;
+  }
+}

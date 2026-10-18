@@ -1,0 +1,159 @@
+/* RESET / BASE */
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+
+body {
+  overflow-x: hidden;
+  font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+  color: #ffffff;
+  position: relative;
+}
+
+
+
+/* OPENING TEXT */
+
+
+.opening-text {
+  display: block;
+  width: 100%;
+  max-width: max-content;
+  margin: 1.5rem auto;
+  margin-top: 0%;
+  padding: 0%;
+  padding-left: 12%;
+  padding-right: 12%;
+  font-size: 3rem;
+  font-weight: bold;
+  color: #b3a65e;
+  background: #464545a6;
+  border: transparent #b3a65e;
+  border-radius: 12px;
+  text-shadow: 0 1px 3px #000000e6;
+  position: sticky;
+  top: 0px;
+}
+
+
+.bg-video {
+  position: fixed;
+  top:0;
+  left: 0;
+  z-index: -1;
+  height:100%;
+  width: 100%;
+  object-fit: cover;
+  pointer-events: none;
+  filter: brightness(0.6);
+}
+
+
+#arrow {
+    border-radius: 50px;
+    width: 50px;
+    background: #b3a65e;
+    position: sticky;
+    top: 67px;
+    margin-left: 12px ;
+    margin-top: 19px;
+    border-width: 3px;
+    box-shadow: 2px 2px 7px 6px #b3a65e;
+    color: #fffcf8;
+    font-weight: bolder;
+    padding: auto;
+}
+
+#arrow:hover {
+  border-color: #aaa2a2;
+  width: 55px;
+  background: linear-gradient(to bottom, #ece6c1 , #b1a97f);
+}
+
+#arrow:active {
+  width:70px;
+  background: linear-gradient( to left,aqua , #fdfdfc , aqua );
+  border-color: #ff8c00 ;
+  border-radius: 70px;
+  box-shadow: 0 0 5px 7px #ffffff;
+  font-weight: 1000;
+  color: aqua;
+}
+
+
+/* French-Maybe-song-Edit Video */
+
+.El-Courir {
+  display: block;
+  width: 100%;
+  max-width: 900px;
+  margin: 1.5rem auto;
+  border-radius: 70px;
+  border: 3px solid #b89f0f;
+  box-shadow: 0 4px 12px #00000066;
+  aspect-ratio: 4.5/3;
+  object-fit: cover;
+}
+
+
+/* French-Maybe-song Caption */
+
+.French-Maybe-song-info-text {
+  display: inline;
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto 1rem auto;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  color: #b89f0f;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.9);
+  font-size: 58px;
+}
+
+
+/* French-Maybe-songInfo Block */
+
+.info {
+  display: block;
+  width: 100%;
+  max-width: 1280px;
+  margin: 1rem auto;
+  padding: 1rem;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #ffffff;
+  background: #000000a6;
+  border: 3px solid #b89f0f;
+  border-radius: 42px;
+  box-shadow: 0 4px 12px #00000066;
+  text-shadow: 0 1px 3px #000000e6;
+  line-height: 1.6;
+}
+
+
+/* SMALL SCREENS */
+
+@media (max-width: 480px) {
+  .opening-text,
+  .info {
+    font-size: 0.9rem;
+    padding: 0.75rem;
+    border-width: 2px;
+  }
+
+  .El-Courir-info-text {
+    font-size: 1.4rem;
+  }
+
+  .info {
+    border-width: 2px;
+  }
+}

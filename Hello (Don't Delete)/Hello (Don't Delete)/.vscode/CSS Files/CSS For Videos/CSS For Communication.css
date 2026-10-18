@@ -1,0 +1,176 @@
+/* RESET / BASE */
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+
+body {
+  overflow-x: hidden;
+  font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+  color: #ffffff;
+  position: relative;
+}
+
+
+/* OPENING TEXT */
+
+.opening-text {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 1000px;
+  border-radius: none;
+  margin: 0.9rem auto;
+  font-size: 2em;
+  font-weight: bold;
+  color: #1874c0;
+  background: #b9b2b2a6;
+  box-shadow: 4px 4px 9px 9px #1874c0;
+  text-shadow: 0 1px 3px #000000e6;
+  position: sticky;
+  top: 44px;
+  border-color: #1874c0;
+  border: solid;
+  border-image: linear-gradient(to left , Violet , Indigo , Blue , purple ,Orange  , Yellow , Green , Red , SkyBlue , Pink) 1% ;
+}
+
+
+.opening-text:hover {
+  background-color: #1874c0 ;
+  transition: background 10.75 s ease, ease-in-out 10 s;
+  background: linear-gradient(to left , #1874c0 , white , purple);
+  transition:  0.6s , ease-in-out 0.3s ;
+  transform: scale(1.2);
+  margin: 1% auto;
+}
+
+.Hello {
+  position: fixed;
+  top:0;
+  left: 0;
+  z-index: -1;
+  padding: 9.6px;
+  height:100%;
+  width: 100%;
+  background: linear-gradient(to left , Violet , Indigo , Blue , purple ,Orange  , Yellow , Green , Red , SkyBlue , Pink);
+}
+
+.bg-video {
+  height:100%;
+  width: 100%;
+  object-fit: cover;
+  pointer-events: none;
+  filter: brightness(0.6);
+}
+
+
+#arrow {
+    width: 50px;
+    background: #1874c0;
+    position: sticky;
+    top: 67px;
+    margin-left: 15px ;
+    margin-top: 19px;
+    border-width: 3px;
+    box-shadow: 2px 2px 7px 6px #fffffe;
+    color: #fffcf8;
+    font-weight: bolder;
+    padding: auto;
+    border-image: linear-gradient(to left , Violet , Indigo , Blue , purple ,Orange  , Yellow , Green , Red , SkyBlue , Pink) 1% ;
+}
+
+#arrow:hover {
+  border-width: 7px;
+  margin-left: 22px ;
+  transform: scale(1.2);
+  border-image: linear-gradient(to left, Violet , Indigo ,Orange  , Yellow , Green , Red , SkyBlue  , bLUE  , #c90abf ,  #492a49 , #8a52b3  , purple , Pink);
+  transition: 0.37s , ease-in-out 0.17s ;
+}
+
+#arrow:active {
+  width: 70px;
+  border-image: linear-gradient( to left,bLUE , #f7f707 , #c90abf );
+  border-color: #ff8c00 ;
+  box-shadow: 0 0 5px 7px #ffffff;
+  font-weight: bolder;
+  color: aqua;
+}
+
+
+
+/* Communicating-Feelings Video */
+
+.Communicating-Feelings {
+  display: block;
+  Width: 100%;
+  max-width: 500px;
+  margin: 1.5rem auto;
+  border-radius: none;
+  border: 3px solid;
+  box-shadow: 4px 4px 9px 9px #1874c0;
+  margin-bottom: 36px;
+  border-image: linear-gradient(to left , Violet , Indigo , Blue , purple ,Orange  , Yellow , Green , Red , SkyBlue , Pink) 1% ;
+}
+
+
+
+/* Communicating-Feelings Caption */
+
+.Communicating-Feelings-info-text {
+  display: inline ;
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto 1rem auto;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  color: #ffffff;
+}
+
+
+/* Communicating-Feelings Info Block */
+
+.info {
+  display: block;
+  width: 100%;
+  max-width: 1000px;
+  margin: 1rem auto;
+  padding: 1rem;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #ffffff;
+  background: rgba(0, 0, 0, 0.65);
+  border: 3px solid #1874c0;
+  box-shadow: 4px 4px 9px 9px #1874c0;;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.9);
+  line-height: 1.6;
+  margin-top: 36px;
+  border-image: linear-gradient(to left , Violet , Indigo , Blue , purple ,Orange  , Yellow , Green , Red , SkyBlue , Pink) 1% ;
+}
+
+
+/* SMALL SCREENS */
+
+@media (max-width: 767px) {
+  .opening-text,
+  .info {
+    font-size: 0.9rem;
+    padding: 0.75rem;
+    border-width: 2px;
+  }
+
+  .Communicating-Feelings-info-text {
+    font-size: 1.4rem;
+  }
+
+  .info {
+    border-width: 2px;
+  }
+}

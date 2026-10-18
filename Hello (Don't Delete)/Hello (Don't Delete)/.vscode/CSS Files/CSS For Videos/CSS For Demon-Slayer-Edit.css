@@ -1,0 +1,163 @@
+/* RESET / BASE */
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+
+body {
+  overflow-x: hidden;
+  font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+  color: #ffffff;
+}
+
+
+/* OPENING TEXT */
+
+.opening-text {
+  display: block;
+  width: 100%;
+  max-width: fit-content;
+  margin: 1.5rem auto;
+  padding: 1rem;
+  padding-right: 3rem;
+  padding-left: 3rem;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #ffffff;
+  background: #000000a6;
+  border: 3px solid #168bb9;
+  border-radius: 42px;
+  box-shadow: 0 4px 12px #00000066;
+  text-shadow: 0 1px 3px #000000e6;
+}
+
+.opening-text:hover {
+  transition: 0.2s , ease-in-out 0.2s ;
+  transform: scale(1.2);
+  margin-bottom: 1%;
+  background: #ffffff;
+  border: 3 transparent #168bb9;
+  color: #168bb9 ;
+  padding-right: 9rem;
+  padding-left: 9rem;
+  font-size: 1.5rem;
+}
+
+/* Demon-Slayer-Edit Video */
+
+.Demon-Slayer-Edit {
+  display: block;
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  margin: 1.5rem auto;
+  border-radius: 42px;
+  border: 3px solid #168bb9;
+  box-shadow: 0 4px 12px #00000066;
+}
+
+
+.bg-video {
+  position: fixed;
+  top:0;
+  left: 0;
+  z-index: -1;
+  height:100%;
+  width: 100%;
+  object-fit: cover;
+  pointer-events: none;
+  filter: brightness(0.6);
+}
+
+
+#arrow {
+    border-radius: 50px;
+    width: 50px;
+    background: #168bb9;
+    position: fixed;
+    top: 67px;
+    margin-left: 12px ;
+    margin-top: 19px;
+    border-width: 3px;
+    box-shadow: 2px 2px 7px 2px #fffffe , -2px -2px 7px 2px #fffffe;
+    color: #fffcf8;
+    font-weight: bolder;
+    padding: auto;
+}
+
+#arrow:hover {
+  border-color: #aaa2a2;
+  width: 55px;
+  background: linear-gradient(to bottom, #168bb9 , #8faf18);
+}
+
+#arrow:active {
+  width:70px;
+  background: linear-gradient( to left,aqua , #fdfdfc , aqua );
+  border-color: #ff8c00 ;
+  border-radius: 70px;
+  box-shadow: 0 0 5px 7px #ffffff;
+  font-weight: 1000;
+  color: aqua;
+}
+
+
+/* Demon-Slayer-Edit Caption */
+
+.Demon-Slayer-Edit-info-text {
+  display: block;
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto 1rem auto;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  color: #168bb9;
+  text-shadow: 0 2px 6px #000000e6;
+}
+
+
+/* Demon-Slayer-Edit Info Block */
+
+.info {
+  display: block;
+  width: 100%;
+  max-width: 1000px;
+  margin: 1rem auto;
+  padding: 1rem;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #ffffff;
+  background: #000000a6;
+  border: 3px solid #168bb9;
+  border-radius: 42px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.9);
+  line-height: 1.6;
+}
+
+
+/* SMALL SCREENS */
+
+@media (max-width: 480px) {
+  .opening-text,
+  .info {
+    font-size: 0.9rem;
+    padding: 0.75rem;
+    border-width: 2px;
+  }
+
+  .Demon-Slayer-Edit-info-text {
+    font-size: 1.4rem;
+  }
+
+  .info {
+    border-width: 2px;
+  }
+}

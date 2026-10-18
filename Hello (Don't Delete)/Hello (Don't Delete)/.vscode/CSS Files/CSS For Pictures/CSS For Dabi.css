@@ -1,0 +1,180 @@
+/* RESET / BASE */
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+
+body {
+  overflow-x: hidden;
+  font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+  color: #ffffff;
+  backdrop-filter: brightness(0.5);
+}
+
+
+/* OPENING TEXT */
+
+.opening-text {
+  display: block;
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 1rem;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #ffffff;
+  background: #5e5d5d96;
+  border: 3px solid #ff0303;
+  border-radius: 12px;
+  box-shadow: 2px 2px 7px 5px #ffffff , -2px -2px 7px 5px #ffffff;
+  text-shadow: 0 1px 3px #af0606e6 , 0 -1px 3px #fffdfde6;
+  position:sticky;
+  top: 1.5rem ;
+
+}
+
+.opening-text:hover {
+  background-color: #ff8c00;
+  border-color: rgba(255, 255, 255, 0.65);
+  box-shadow: 1px 1px 4px 5px #000000a6;
+  color: black;
+  text-shadow: 2px 1px 3px #000000e6 , 0 1px #000000e6;
+  cursor: pointer;
+}
+
+/* Go Back */
+
+#arrow {
+    border-radius: 50px;
+    width: 50px;
+    background: #000000e6;
+    position: sticky;
+    top: 67rem;
+    margin: 4rem auto;
+    border-width: 3px;
+    box-shadow: 2px 2px 7px 6px #fffffe;
+    color: #fffcf8;
+    font-weight: bolder;
+    padding: auto;
+    cursor: Pointer;
+}
+
+#arrow:hover {
+  background-color: #fcfcfc;
+  color: rgb(0, 0, 0);
+  border-color: #aaa2a2;
+  width: 55px;
+}
+
+#arrow:active {
+  width:70px;
+  background-color: #ff8c00;
+  border-color: #ff8c00 ;
+  border-radius: 70px;
+  box-shadow: 0 0 5px 7px #ffffff;
+  font-weight: 1000;
+  color: aqua;
+}
+
+/* Dabi Image */
+
+.Dabi {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+  border-radius: 42px;
+  border: 3px solid #f5f4f3;
+  box-shadow: 2px 2px 7px 5px #ff0303 , -2px -2px 7px 5px #ff0303;
+  margin-top: 2.8rem;
+  cursor: pointer;
+}
+
+
+/* Dabi Caption */
+
+.Dabi-info-text {
+  display: inline;
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto 1rem auto;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  color: #ffffff;
+  text-shadow: 4px 4px 6px 5px #28913ae6 , -4px -4px 6px 5px #127748e6;;
+  cursor: pointer;
+}
+
+
+.Dabi-info-text:hover {
+  display:inline;
+  justify-content: center;
+  text-shadow: 5px 4px 9px #5515ca , -5px -4px 9px #5515ca;
+  transition: color 120 s  ease-in-out 120 s;
+  cursor: pointer;
+}
+
+
+/* Dabi Info Block */
+
+.info {
+  display: block;
+  width: 94%;
+  max-width: 2500px;
+  margin: 1rem auto;
+  padding: 1rem;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #ffffff;
+  background: rgba(0, 0, 0, 0.65);
+  border: 3px solid #ffffff;
+  border-radius: 42px;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.9);
+  line-height: 1.6;
+  box-shadow: 5px 5px 19px 9px #eceaea;
+  cursor: pointer;
+}
+
+
+.info1 {
+  display: block;
+  width: 94%;
+  max-width: 2500px;
+  margin: 1rem auto;
+  padding: 1rem;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #ffffff;
+  background: rgba(0, 0, 0, 0.65);
+  border: 3px solid #ffffff;
+  border-radius: 42px;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.9);
+  line-height: 1.6;
+  box-shadow: 5px 5px 19px 9px #eceaea;
+}
+
+ /* For Feature Phone Screens */
+
+@media (max-width: 480px) {
+  .opening-text,
+  .info {
+    font-size: 0.9rem;
+    padding: 0.75rem;
+    border-width: 2px;
+  }
+
+  .Dabi-info-text {
+    font-size: 1.4rem;
+  }
+
+  .info {
+    border-width: 2px;
+  }
+}

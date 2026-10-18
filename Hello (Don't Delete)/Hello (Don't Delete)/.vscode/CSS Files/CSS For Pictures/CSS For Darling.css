@@ -1,0 +1,165 @@
+
+*{
+    box-sizing:border-box;
+}
+
+
+.html,body {
+    box-sizing: border-box;
+    margin: 0;
+    overflow: auto;
+    overflow-x: hidden;
+    backdrop-filter: brightness(0.5);
+}
+
+
+ /* Opening Text */
+
+#opening-text {
+    box-sizing: border-box;
+    display: block;
+    border-radius: 50%;
+    padding: 1%;
+    position: sticky;
+    top:  1.5rem ;
+    margin: auto;
+    background-color: firebrick;
+    font-size: 1.1rem;
+    font-family: monospace;
+    font-weight: bolder;
+    color:aliceblue;
+    width: 100%;
+    max-width: 1000PX;
+    cursor: pointer;
+    box-shadow: 4px 4px 9px 4px Red  , -4px -4px  9px 4px Red;
+}
+
+#opening-text:hover {
+    background: linear-gradient(to right , Pink , White , red);
+    transform: scale(1.1);
+    color: Blueviolet;
+    transition: 0.67s , ease-in-out 0.4s  ;
+    box-shadow: 0 0 0 0  , 0 0 0 0;
+    margin-bottom: 30px;
+}
+
+ /* Go Back */
+
+#arrow {
+    border-radius:50%;
+    font-size: 2rem;
+    padding-left: 2.8%;
+    padding-right: 1.8%;
+    width: 70%;
+    max-width: fit-content;
+    border: none;
+    position :sticky;
+    top: 53px;
+    cursor: pointer ;
+    box-shadow: 4px 4px 6px 4px Red  , -4px -4px  6px 4px Red;
+}
+
+#arrow:hover {
+    transform: scale( 0.9);
+    transition: 0.67s , ease-in-out 0.29s;
+    background-color: Black;
+    color: White;
+    margin-left: 20px;
+    box-shadow: 4px 4px 6px 4px White  , -4px -4px  6px 4px White;
+}
+
+#arrow:active {
+    transform:scale(0.9);
+    background-color: White;
+    color : Black ;
+}
+
+/* Darling-Picture */
+
+#Darling-Picture {
+    display: block;
+    border-radius:50%;
+    border-style: solid;
+    border-color: red;
+    margin: 1.5rem auto;
+    width: 50%;
+    max-width: 1000px;
+    cursor: pointer;
+    box-shadow: 4px 4px 9px 4px Red  , -4px -4px  9px 4px Red;
+}
+
+#Darling-Picture:hover {
+    background: linear-gradient(to right , Pink , White , red);
+    transform: scale(1.1);
+    color: Blueviolet;
+    transition: 0.67s , ease-in-out 0.4s  ;
+}
+
+ /* Caption */
+
+#caption {
+    display: block ;
+    font-size: 2rem;
+    color: Red;
+    width: 100%;
+    max-width: 1000px;
+    cursor: pointer;
+    text-align: center;
+    font-family: monospace;
+    background: #b9b2b2a6;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+    box-shadow: 4px 4px 9px 4px Red  , -4px -4px  9px 4px Red;
+}
+
+#caption:hover {
+    background: linear-gradient(to right , Pink , White , red);
+    transform: scale(1.1);
+    color: Blueviolet;
+    transition: 0.67s , ease-in-out 0.4s ;
+}
+
+ /* Caption */
+
+#info {
+    border: Solid;
+    border-color: Red;
+    border-radius: 42px;
+    color: White;
+    line-height: 1.6;
+    width: 100%;
+    max-width: 1000px;
+    font-family: monospace;
+    font-size: 1.3em;
+    font-weight: bolder;
+    text-align: center;
+    display: block;
+    justify-content: center;
+    margin: 3.5rem  auto 0 auto;
+    box-shadow: 4px 4px 9px 4px Red  , -4px -4px  9px 4px Red;
+}
+
+#info:hover {
+    transform: scale(1.1);
+    transition: 0.67s , ease-in-out 0.4s  ;
+}
+
+/* For Feature Phone Screens */
+
+@media (max-width: 480px) {
+  .opening-text,
+  .info {
+    font-size: 0.9rem;
+    padding: 0.75rem;
+    border-width: 2px;
+  }
+
+  .Darling-info-text {
+    font-size: 1.4rem;
+  }
+
+  .info {
+    border-width: 2px;
+  }
+}

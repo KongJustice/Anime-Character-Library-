@@ -1,0 +1,249 @@
+/* RESET / BASE */
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  user-select: none;
+}
+
+body {
+  overflow-x: hidden;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #ffffff;
+}   
+
+
+#bg-video {
+object-fit:cover;
+position: fixed;
+top: 0;
+z-index: -1;
+Width: 100%;
+height:100%;
+}
+
+
+/* Header */
+
+h2 {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  margin: auto;
+  padding: 0.6rem 0.5rem;
+  background: #0c0c0cbf;
+  backdrop-filter: blur(6px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+  box-shadow: 0 2px 55px 23px #721c1c80;
+  transform: scale(1.04);
+}
+
+
+.Anime-Button {
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 0.5rem 1.75rem;
+  border: 2px solid #ff8c00;
+  border-radius: 999px;
+  background: transparent;
+  color: #ff8c00;
+  cursor: pointer;
+  transition: background 0.25s ease, color 0.25s ease, transform 0.2s ease;
+  margin-top: 9px;
+  margin-bottom: 11px;
+  transform: scale(1.4);
+}
+
+.Anime-Button:hover {
+  background: #f7e7e7;
+  color: #078f74;
+  border-color:aqua;
+  transform: translate(-8px , 4px);
+}
+
+.Anime-Button:active {
+  background-color: #ff8c00;
+  border-color: #f7e7e7;
+  border-radius: 9px;
+  color: #000000;
+  transform: scale(0.97);
+  font-size: 2rem;
+  font-family: 'Times New Roman', Times, serif;
+  transition: background 0.25 ease,  ease-in 0.25 s , ease-out 0.25 s  ;
+}
+
+#Enter {
+  /* Placements */
+
+    margin-bottom: 0%;
+    display: flexbox;
+    flex-wrap: nowrap;
+    width: 100% ;
+    max-width: fit-content ;
+    position: sticky;
+    top: 5.9rem;
+
+    /* Designs */
+
+    margin-top: 1rem;
+    font-size: 1rem;
+    font-family: 'Times New Roman', Times, serif;
+    border-radius: 33px;
+    padding: 0.6%;
+    font-weight: bolder;
+    color: #204916;
+    text-shadow: 2px 2px 5px #ffffff , -2px -2px 5px #ffffff;
+    background: #f7f5f5a6;
+    transform: scale(0.9);
+}
+
+
+#Enter:hover {
+    transition: 0.2s , 0.2s ;
+    transform: scale(1);
+    color: #ffffff;
+    padding-left: 0.8%;
+    padding-right: 0.8%;
+    font-size: 1rem;
+    text-shadow: 2px 2px 9px black , -2px -2px 5px black;
+    background: #f7f5f5a6;
+    width: 35%;
+    max-width: max-content ;
+    margin-bottom: 2%;
+    font-family: 'Courier New', Courier, monospace;
+    margin-left: 1%;
+    margin-bottom: 0%;
+}
+
+#Enter:active {
+ /* Placements */
+
+    margin-left: 1%;
+    margin-bottom: 0%;
+
+    /* Designs */
+
+    transition: 0.2s , 0.2s ;
+    color: #000000;
+    padding-left: 0.8%;
+    padding-right: 0.8%;
+    text-shadow: 2px 2px 9px #ffffff , -2px -2px 5px #ffffff;
+    background: #f7f5f5a6;
+    font-family: 'Times New Roman', Times, serif;
+    font-family: cursive;
+}
+
+
+
+/* Container */
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1.18rem;
+  padding: 1rem 0.5rem;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+
+/* Gallary */
+
+.gallary {
+  flex: 0 0 300px;
+  text-align: center;
+  background:#55525288;
+  border-radius: 10px;
+  padding: 0.75rem;
+  box-shadow: 0 4px 12px #ff8c00;
+  transition: transform 0.25s ease;
+  overflow: hidden;
+  margin-top: 20px;
+  transition: all 0.3s ease;
+}
+
+
+.gallary:active {
+  transform: scale(0.97);
+}
+
+.gallary:hover {
+  transform: translateY(0.5px);
+  transform: scale(1.05);
+  box-shadow: 3px 3px 9px 9px #ff8c00;
+}
+
+
+
+/* IMAGES & VIDEOS */
+
+.gallary img,
+.gallary video {
+  width: 100%;
+  height: 100%;
+  display: block;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+  object-fit: cover;
+  aspect-ratio: 3/4;
+}
+
+.gallary:hover img,
+.gallary:hover video {
+transform: scale(1.5);
+}
+
+
+/* Captions */
+
+.gallary figcaption {
+  margin-top: 0.6rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #ffffff;
+  text-shadow: 0 1px 3px #000000e6;
+}
+
+.gallary figcaption strong {
+  color: #ffb347;
+}
+
+
+/* Touch Screen Devices */
+
+@media (hover: none) {
+  .gallary:hover {
+    transform: none;
+  }
+  .gallary:hover img,
+  .gallary:hover video {
+    transform: none;
+  }
+  .Anime-Button:hover {
+    background: transparent;
+    color: #ff8c00;
+  }
+}
+
+
+/* Feature Phones Screns*/
+
+@media (max-width: 480px) {
+  .container {
+    padding: 0.75rem 0.5rem;
+    gap: 0.5rem;
+  }
+  .gallary {
+    flex: 0 0 100%;
+  }
+}

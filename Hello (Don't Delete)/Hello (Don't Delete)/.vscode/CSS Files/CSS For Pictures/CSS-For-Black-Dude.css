@@ -1,0 +1,186 @@
+/* RESET / BASE */
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+
+body {
+  overflow-x: hidden;
+  font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+  color: #ffffff;
+  backdrop-filter: brightness(0.3);
+}
+
+
+/* OPENING TEXT */
+
+.opening-text {
+  display: block;
+  width: 100%;
+  max-width: 1000px;
+  margin: auto ;
+  padding: 1rem;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #ffffff;
+  background: #5e5d5d96;
+  border: 3px solid #000000;
+  border-radius: 12px;
+  box-shadow: 4px 4px 5px 10px #4e2c2c , -4px -4px 5px 7px #533333d5;
+  text-shadow: 0 1px 3px rgba(175, 6, 6, 0.9) , 0 -1px 3px rgba(255, 253, 253, 0.9);
+  position:sticky;
+  top: 1.5rem  ;
+}
+
+.opening-text:hover {
+  background-color: #ff8c00;
+  border-color: #ffffffa6;
+  box-shadow: 1px 1px 4px 5px rgba(0, 0, 0, 0.65);
+  color: black;
+  text-shadow: 2px 1px 3px #000000e6 , 0 1px #000000e6;
+  cursor: pointer;
+  transform: scale(1.1);
+  transition: 0.2s , ease-in-out 0.3s;
+}
+
+/* Go Back To Home-Page */
+
+#arrow {
+    border-radius: 50px;
+    width: 50px;
+    background: #4e2c2c;
+    position: sticky;
+    top: 67px;
+    margin-left: 12px ;
+    margin-top: 19px;
+    border-width: 3px;
+    box-shadow: 2px 2px 7px 6px #000000;
+    color: #ffffff;
+    font-weight: bolder;
+    padding: auto;
+    cursor: Pointer;
+}
+
+#arrow:hover {
+  background-color: #fcfcfc;
+  color: rgb(0, 0, 0);
+  border-color: #aaa2a2;
+  width: 10%;
+  max-width: 100px;
+  transform: scale(1.1);
+  transition: 0.2s , ease-in-out 0.3s;
+  margin-left: 3%;
+}
+
+#arrow:active {
+  width:70px;
+  background-color: #ff8c00;
+  border-color: #ff8c00 ;
+  border-radius: 70px;
+  box-shadow: 0 0 5px 7px #ffffff;
+  font-weight: 1000;
+  color: aqua;
+}
+
+/* Black-Dude Image */
+
+.Black-Dude {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 1.5rem auto;
+  border-radius: 42px;
+  border: 9px solid #000000;
+  box-shadow: 4px 4px 5px 10px #533333d5 , -4px -4px 5px 10px #533333d5;
+  margin-top: 2.8rem;
+  cursor: pointer;
+}
+
+
+/* Black-Dude Caption */
+
+.Black-Dude-info-text {
+  display: inline;
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto 1rem auto;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  color: #ffffff;
+  text-shadow: 4px 4px 6px 16px rgba(40, 145, 58, 0.9) , -4px -4px 6px 16px #127748e6;;
+  cursor: pointer;
+}
+
+
+.Black-Dude-info-text:hover {
+  display:inline;
+  justify-content: center;
+  text-shadow: 5px 4px 9px #5515ca , -5px -4px 9px #5515ca;
+  transition: color 120 s  ease-in-out 120 s;
+  cursor: pointer;
+}
+
+
+/* Black-Dude Info Block */
+
+.info {
+  display: block;
+  width: 100%;
+  max-width: 1000px;
+  margin: 1rem auto;
+  padding: 1rem;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #ffffff;
+  background: #000000a6;
+  border: 9px solid #000000;
+  border-radius: 42px;
+  text-shadow: 0 1px 3px #000000e6;
+  line-height: 1.6;
+  box-shadow: 4px 4px 5px 10px #4e2c2c , -4px -4px 5px 7px #533333d5;
+  cursor: pointer;
+}
+
+
+.info1 {
+  display: block;
+  width: 100%;
+  max-width: 1000px;
+  margin: 1rem auto;
+  padding: 1rem;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #ffffff;
+  background: rgba(0, 0, 0, 0.65);
+  border: 9px solid #000000;
+  border-radius: 12px;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.9);
+  line-height: 1.6;
+  box-shadow: 4px 4px 5px 10px #4e2c2c , -4px -4px 5px 7px #533333d5;
+}
+
+ /* For Feature Phone Screens */
+
+@media (max-width: 480px) {
+  .opening-text,
+  .info {
+    font-size: 0.9rem;
+    padding: 0.75rem;
+    border-width: 2px;
+  }
+
+  .Dabi-info-text {
+    font-size: 1.4rem;
+  }
+
+  .info {
+    border-width: 2px;
+  }
+}
